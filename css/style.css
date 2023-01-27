@@ -1,0 +1,476 @@
+@charset "UTF-8";
+@font-face {
+  font-family: nyf;
+  src: url(../assets/Font/Oswald/Oswald-VariableFont_wght.ttf); }
+
+@font-face {
+  font-family: txt;
+  src: url(../assets/Font/Teko/Teko-Regular.ttf); }
+
+@font-face {
+  font-family: cards;
+  src: url(../assets/Font/Kaushan_Script/KaushanScript-Regular.ttf); }
+
+@font-face {
+  font-family: subtitulo;
+  src: url(../assets/Font/EB_Garamond/EBGaramond-Italic-VariableFont_wght.ttf); }
+
+/* reset de estilos */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+ul,
+ol,
+li {
+  list-style: none; }
+
+a {
+  text-decoration: none; }
+
+/* HEADER */
+header {
+  background-color: #FF7000;
+  font-family: nyf;
+  font-size: 15px;
+  position: sticky;
+  top: 0;
+  z-index: 2; }
+  header nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px; }
+    header nav a {
+      color: #000000;
+      background-image: linear-gradient(#000000, #000000);
+      background-position: 50% 60%;
+      background-repeat: no-repeat;
+      background-size: 0% 2px;
+      transition: background-size 0.3s; }
+      header nav a:hover {
+        background-image: linear-gradient(#000000, #000000);
+        background-size: 90% 2px; }
+    header nav img {
+      height: 15px; }
+    header nav ul {
+      display: flex;
+      gap: 25px; }
+
+/* FOOTER */
+.footer {
+  background-image: url(../assets/Banner.jpg);
+  background-position: center;
+  object-fit: cover;
+  font-family: nyf;
+  display: flex;
+  justify-content: space-between; }
+
+/* redes */
+.redes {
+  background-color: #000000;
+  padding: 10px;
+  color: #ffff;
+  justify-content: space-evenly; }
+
+.redes1 {
+  display: grid;
+  grid-template-columns: repeat(3, 90px);
+  grid-template-rows: auto;
+  grid-template-areas: 'area1 .. area3' '.. area5 ..'; }
+
+.ig {
+  color: #dc143c;
+  grid-area: area1; }
+
+.fb {
+  color: #0000ff;
+  grid-area: area3; }
+
+.tw {
+  color: #7fffd4;
+  grid-area: area5; }
+
+/* footer nav */
+.footnav {
+  background-color: #000000;
+  padding: 10px;
+  padding-right: 180px; }
+
+.color-foot {
+  color: #ffffff; }
+
+/* footer logo */
+.logof a {
+  font-size: 50px;
+  color: #ffff;
+  -webkit-text-stroke: 2px #000000; }
+
+/* INDEX */
+.main {
+  background-image: url(../assets/fondo/livewallpaper_konoha__naruto__by_themanofsteel0_df3f98i-fullview.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  padding: 200px 30px 10px 30px; }
+
+.resumen {
+  background-color: #DC5F00;
+  display: flex;
+  border-radius: 20px; }
+  .resumen .img-resumen {
+    object-fit: contain;
+    height: 100%;
+    width: 60%;
+    border-radius: 20px;
+    box-shadow: 10px 0px 15px 0px #000000; }
+  .resumen .txt-resumen {
+    color: #ffffff;
+    font-family: txt;
+    font-size: 20px;
+    padding: 30px; }
+
+/* tarjetas */
+.tarjetas {
+  display: flex;
+  color: #000000;
+  justify-content: space-evenly;
+  padding-bottom: 20px; }
+  .tarjetas .cardEquipo7 {
+    height: 500px;
+    width: 300px;
+    background-color: #DC5F00;
+    padding: 10px; }
+    .tarjetas .cardEquipo7 img {
+      width: 100%;
+      height: 100%;
+      transition: 0.5s;
+      filter: grayscale(1); }
+      .tarjetas .cardEquipo7 img:hover {
+        transform: scale(1.1, 1.1);
+        filter: grayscale(0); }
+  .tarjetas .img-card {
+    background-image: url(../assets/Puerta-Konoha.jpg);
+    background-size: cover;
+    height: 200px;
+    width: 100%; }
+
+.titulo {
+  width: 250px;
+  font-family: nyf;
+  font-size: 20px;
+  color: #ffffff;
+  background-color: #413d3d;
+  margin: 20px;
+  padding: 10px; }
+
+/* secciones */
+.secciones {
+  display: grid;
+  grid-template-columns: repeat(2, 2fr);
+  grid-template-rows: auto;
+  gap: 30px; }
+  .secciones div {
+    transition: 0.5s;
+    filter: grayscale(1); }
+    .secciones div:hover {
+      transform: scale(1.05, 1.05);
+      filter: grayscale(0); }
+    .secciones div p {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: nyf;
+      font-size: 50px;
+      color: #ffff;
+      -webkit-text-stroke: 2px #000000; }
+
+.section {
+  width: 100%;
+  height: 500px; }
+
+.personajes {
+  background-image: url(../assets/personajes.jpg);
+  background-position: center;
+  background-size: cover; }
+
+.aldeas {
+  background-image: url(../assets/Aldeas.png);
+  background-position: center;
+  background-size: cover; }
+
+.tecnicasElementales {
+  background-image: url(../assets/Tecnicaselementales.jpg);
+  background-position: center;
+  background-size: cover; }
+
+/* tipografia subtitulos */
+.subtitulos {
+  font-family: subtitulo;
+  font-size: 30px; }
+
+/* DESCARGAS */
+.descargas-main {
+  padding: 40px;
+  background-image: url(../assets/fondo/5033317.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover; }
+
+/* JUEGOS */
+.celularDescargas {
+  background: radial-gradient(circle, #80808077, #000000), url(../assets/NarutoTriste.jpg);
+  background-size: cover;
+  background-position: center;
+  color: #ffffff;
+  font-family: nyf;
+  font-size: 30px;
+  padding: 80px;
+  height: 100vh; }
+
+.game {
+  background-color: #191919;
+  padding: 30px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  grid-template-areas: 'f1 f6 f6' 'f2 f2 f3' 'f2 f2 f4' 'f5 f5 boton';
+  gap: 10px; }
+
+.f1 {
+  grid-area: f1; }
+
+.f2 {
+  grid-area: f2; }
+
+.f3 {
+  grid-area: f3; }
+
+.f4 {
+  grid-area: f4; }
+
+.f5 {
+  grid-area: f5; }
+
+.f6 {
+  grid-area: f6;
+  color: #ffffff; }
+
+.fotos img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; }
+
+.btnarea {
+  grid-area: boton; }
+
+.btn-descarga {
+  font-size: 30px;
+  font-family: txt;
+  width: 200px;
+  background-color: #3c3cdd;
+  border-radius: 8px; }
+
+/* CONTACTO */
+.contacto-main {
+  background-color: #191919;
+  padding: 50px; }
+
+.contacto-img {
+  background-image: url(../assets/Banner2.jpg);
+  background-position: center;
+  height: 130px; }
+
+.formulario {
+  display: flex;
+  align-items: center;
+  padding: 10px; }
+  .formulario img {
+    object-fit: cover;
+    padding: 50px; }
+  .formulario .form {
+    background-color: #000000;
+    color: #ffff;
+    padding: 30px;
+    width: 100%;
+    height: 530px; }
+    .formulario .form .casilla {
+      font-family: cards;
+      display: flex;
+      flex-direction: column;
+      font-size: 20px; }
+      .formulario .form .casilla textarea {
+        resize: none; }
+
+.btnContacto {
+  font-size: 20px;
+  font-family: nyf;
+  width: 80px;
+  background-color: #3c3cdd;
+  border-radius: 8px;
+  padding: 5px; }
+
+/* Bootstrap (Aldeas)*/
+.row {
+  margin: 0;
+  padding: 0; }
+
+.carouselTamaño img {
+  object-fit: contain;
+  height: 400px; }
+
+.bg-perso {
+  background-color: #a74b04; }
+
+.bg-perso2 {
+  background-color: #e62020a9; }
+
+.navPerso {
+  background-color: #DC5F00;
+  z-index: 3; }
+
+.card {
+  height: 100%; }
+  .card img {
+    height: 300px; }
+
+/* Responsive o Media q */
+@media only screen and (min-width: 320px) {
+  /* INDEX */
+  .header {
+    height: 42px;
+    width: 100%; }
+  .resumen {
+    flex-direction: column;
+    align-items: center;
+    padding-top: 40px;
+    height: 100%; }
+  .tarjetas {
+    gap: 20px;
+    flex-direction: column;
+    align-items: center; }
+  /* footer */
+  .redes {
+    width: 30%; }
+  .redes1 {
+    display: flex;
+    flex-direction: column; }
+  .logof {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30%; }
+  .logof h2 {
+    font-size: 30px; }
+  .footnav {
+    width: 30%;
+    padding-right: 0px; }
+  /* CONTACTO */
+  .formulario img {
+    display: none; }
+  .form {
+    height: 380px; }
+  /* DESCARGAS */
+  .descargas-main {
+    display: none; }
+  .celularDescargas {
+    display: flex; }
+  .secciones {
+    display: flex;
+    flex-direction: column; }
+  .section {
+    height: 150px; } }
+
+@media only screen and (min-width: 480px) {
+  .resumen {
+    flex-direction: column;
+    align-items: center;
+    padding-top: 40px;
+    height: 100%; }
+  .tarjetas {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    gap: 10px; }
+  .cardEquipo7 {
+    width: 100%; }
+  /* FOOTER */
+  .redes {
+    width: 30%; }
+  .redes1 {
+    display: flex;
+    flex-direction: column; }
+  .logof {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30%; }
+  .logof h2 {
+    font-size: 40px; }
+  .footnav {
+    width: 30%;
+    padding-right: 0px; }
+  /* DESCARGAS */
+  .descargas-main {
+    display: none; }
+  .celularDescargas {
+    display: flex; }
+  /* CONTACTO */
+  .formulario img {
+    display: none; }
+  .form {
+    height: 380px; } }
+
+@media only screen and (min-width: 768px) {
+  .tarjetas {
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    grid-template-rows: auto;
+    gap: 20px; }
+  /* CONTACTO */
+  .contacto-main {
+    padding-bottom: 300px; }
+  /* FOOTER */
+  .redes {
+    width: 30%; }
+  .redes1 {
+    display: flex;
+    flex-direction: column; }
+  .logof {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30%; }
+  .logof h2 {
+    font-size: 40px; }
+  .footnav {
+    width: 30%;
+    padding-right: 0px; } }
+
+@media only screen and (min-width: 1200px) {
+  .resumen {
+    flex-direction: row;
+    padding-top: 0px; }
+  .tarjetas {
+    display: flex;
+    flex-direction: row; }
+  .cardEquipo7 {
+    height: 500px; }
+  .secciones {
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    grid-template-rows: auto;
+    gap: 30px; }
+  .section {
+    width: 100%;
+    height: 500px; }
+  .celularDescargas {
+    display: none; }
+  .descargas-main {
+    display: block; }
+  .form {
+    height: 530px; }
+  .formulario img {
+    display: block; }
+  .contacto-main {
+    padding-bottom: 0px; } }

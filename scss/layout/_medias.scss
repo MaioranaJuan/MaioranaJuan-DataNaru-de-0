@@ -1,0 +1,240 @@
+/* Responsive o Media q */
+@media only screen and (min-width:320px) {
+
+    /* INDEX */
+    .header {
+        height: 42px;
+        width: 100%;
+    }
+
+    .resumen {
+        flex-direction: column;
+        align-items: center;
+        padding-top: 40px;
+        height: 100%;
+    }
+
+    .tarjetas {
+        gap: 20px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    /* footer */
+    .redes {
+        width: 30%;
+    }
+
+    .redes1 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .logof {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 30%;
+    }
+
+    .logof h2 {
+        font-size: 30px;
+    }
+
+    .footnav {
+        width: 30%;
+        padding-right: 0px;
+    }
+
+    /* CONTACTO */
+    .formulario img {
+        display: none;
+    }
+
+    .form {
+        height: 380px;
+    }
+
+    /* DESCARGAS */
+
+    .descargas-main {
+        display: none;
+    }
+
+    .celularDescargas {
+        display: flex;
+
+    }
+
+    .secciones {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .section {
+        height: 150px;
+    }
+
+}
+
+@media only screen and (min-width:480px) {
+
+    .resumen {
+        flex-direction: column;
+        align-items: center;
+        padding-top: 40px;
+        height: 100%;
+    }
+
+    .tarjetas {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+        gap: 10px;
+    }
+
+    .cardEquipo7 {
+        width: 100%;
+    }
+
+    /* FOOTER */
+    .redes {
+        width: 30%;
+    }
+
+    .redes1 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .logof {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 30%;
+    }
+
+    .logof h2 {
+        font-size: 40px;
+    }
+
+    .footnav {
+        width: 30%;
+        padding-right: 0px;
+    }
+
+    /* DESCARGAS */
+
+    .descargas-main {
+        display: none;
+    }
+
+    .celularDescargas {
+        display: flex;
+
+    }
+
+    /* CONTACTO */
+    .formulario img {
+        display: none;
+    }
+
+    .form {
+        height: 380px;
+    }
+
+}
+
+@media only screen and (min-width:768px) {
+
+    .tarjetas {
+        display: grid;
+        grid-template-columns: repeat(2, 2fr);
+        grid-template-rows: auto;
+        gap: 20px;
+    }
+
+    /* CONTACTO */
+    .contacto-main {
+        padding-bottom: 300px;
+    }
+
+    /* FOOTER */
+    .redes {
+        width: 30%;
+    }
+
+    .redes1 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .logof {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 30%;
+    }
+
+    .logof h2 {
+        font-size: 40px;
+    }
+
+    .footnav {
+        width: 30%;
+        padding-right: 0px;
+    }
+
+}
+
+@media only screen and (min-width:1200px) {
+
+    .resumen {
+        flex-direction: row;
+        padding-top: 0px;
+    }
+
+    .tarjetas {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .cardEquipo7 {
+        height: 500px;
+    }
+
+    .secciones {
+        display: grid;
+        grid-template-columns: repeat(2, 2fr);
+        grid-template-rows: auto;
+        gap: 30px;
+    }
+
+    .section {
+        width: 100%;
+        height: 500px;
+    }
+
+
+    .celularDescargas {
+        display: none;
+    }
+
+    .descargas-main {
+        display: block;
+    }
+
+    .form {
+        height: 530px;
+    }
+
+    .formulario img {
+        display: block;
+    }
+
+    .contacto-main {
+        padding-bottom: 0px;
+    }
+
+}

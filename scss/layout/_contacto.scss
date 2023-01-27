@@ -1,0 +1,51 @@
+/* CONTACTO */
+
+.contacto-main {
+    background-color: #191919;
+    padding: 50px;
+}
+
+.contacto-img {
+    background-image: url(../assets/Banner2.jpg);
+    background-position: center;
+    height: 130px;
+}
+
+.formulario {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+
+    img {
+        object-fit: cover;
+        padding: 50px;
+    }
+
+    .form {
+        background-color: #000000;
+        color: #ffff;
+        padding: 30px;
+        width: 100%;
+        height: 530px;
+
+        .casilla {
+            font-family: cards;
+            display: flex;
+            flex-direction: column;
+            font-size: 20px;
+
+            textarea {
+                resize: none;
+            }
+        }
+    }
+}
+
+.btnContacto {
+    font-size: 20px;
+    font-family: nyf;
+    width: 80px;
+    background-color: #3c3cdd;
+    border-radius: 8px;
+    padding: 5px;
+}

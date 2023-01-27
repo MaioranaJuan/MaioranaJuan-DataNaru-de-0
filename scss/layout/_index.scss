@@ -1,0 +1,133 @@
+/* INDEX */
+.main {
+    background-image: url(../assets/fondo/livewallpaper_konoha__naruto__by_themanofsteel0_df3f98i-fullview.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    padding: 200px 30px 10px 30px;
+}
+
+.resumen {
+    background-color: #DC5F00;
+    display: flex;
+    border-radius: 20px;
+
+    .img-resumen {
+        object-fit: contain;
+        height: 100%;
+        width: 60%;
+        border-radius: 20px;
+        box-shadow: 10px 0px 15px 0px #000000;
+    }
+
+    .txt-resumen {
+        color: #ffffff;
+        font-family: txt;
+        font-size: 20px;
+        padding: 30px;
+    }
+}
+
+/* tarjetas */
+.tarjetas {
+    display: flex;
+    color: #000000;
+    justify-content: space-evenly;
+    padding-bottom: 20px;
+
+    .cardEquipo7 {
+        height: 500px;
+        width: 300px;
+        background-color: #DC5F00;
+        padding: 10px;
+
+        img {
+            width: 100%;
+            height: 100%;
+            transition: 0.5s;
+            filter: grayscale(1);
+
+            &:hover {
+                transform: scale(1.10, 1.10);
+                filter: grayscale(0);
+            }
+        }
+    }
+
+    .img-card {
+        background-image: url(../assets/Puerta-Konoha.jpg);
+        background-size: cover;
+        height: 200px;
+        width: 100%;
+    }
+
+}
+
+
+.titulo {
+    width: 250px;
+    font-family: nyf;
+    font-size: 20px;
+    color: #ffffff;
+    background-color: #413d3d;
+    margin: 20px;
+    padding: 10px;
+}
+
+/* secciones */
+.secciones {
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    grid-template-rows: auto;
+    gap: 30px;
+
+    div {
+        transition: 0.5s;
+        filter: grayscale(1);
+
+        &:hover {
+            transform: scale(1.05, 1.05);
+            filter: grayscale(0);
+        }
+
+        p {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: nyf;
+            font-size: 50px;
+            color: #ffff;
+            -webkit-text-stroke: 2px #000000;
+        }
+    }
+}
+
+
+.section {
+    width: 100%;
+    height: 500px;
+}
+
+.personajes {
+    background-image: url(../assets/personajes.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.aldeas {
+    background-image: url(../assets/Aldeas.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.tecnicasElementales {
+    background-image: url(../assets/Tecnicaselementales.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+/* tipografia subtitulos */
+.subtitulos {
+    font-family: subtitulo;
+    font-size: 30px;
+}

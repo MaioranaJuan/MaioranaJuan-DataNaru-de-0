@@ -1,0 +1,41 @@
+/* HEADER */
+header {
+    background-color: #FF7000;
+    font-family: nyf;
+    font-size: 15px;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+
+        a {
+            color: #000000;
+            background-image: linear-gradient(#000000, #000000);
+            background-position: 50% 60%;
+            background-repeat: no-repeat;
+            background-size: 0% 2px;
+            transition: background-size 0.3s;
+
+            &:hover {
+                background-image: linear-gradient(#000000, #000000);
+                background-size: 90% 2px;
+            }
+        }
+
+        img {
+            height: 15px;
+        }
+
+        ul {
+            display: flex;
+            gap: 25px;
+        }
+
+    }
+
+
+}
