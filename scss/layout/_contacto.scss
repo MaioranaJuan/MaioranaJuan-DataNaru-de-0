@@ -29,7 +29,7 @@
         height: 530px;
 
         .casilla {
-            font-family: cards;
+            font-family: $TextCards;
             display: flex;
             flex-direction: column;
             font-size: 20px;

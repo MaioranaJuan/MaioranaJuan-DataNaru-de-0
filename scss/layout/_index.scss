@@ -8,7 +8,7 @@
 }
 
 .resumen {
-    background-color: #DC5F00;
+    background-color: $ColorPrin;
     display: flex;
     border-radius: 20px;
 
@@ -22,7 +22,7 @@
 
     .txt-resumen {
         color: #ffffff;
-        font-family: txt;
+        font-family: $Text;
         font-size: 20px;
         padding: 30px;
     }
@@ -38,7 +38,7 @@
     .cardEquipo7 {
         height: 500px;
         width: 300px;
-        background-color: #DC5F00;
+        background-color: $ColorPrin;
         padding: 10px;
 
         img {
@@ -128,6 +128,6 @@
 
 /* tipografia subtitulos */
 .subtitulos {
-    font-family: subtitulo;
+    font-family: $TextSubt;
     font-size: 30px;
 }
